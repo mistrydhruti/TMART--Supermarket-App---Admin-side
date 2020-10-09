@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:orientation="vertical"
+    android:layoutAnimation="@anim/layout_animation_down_to_up">
+
+    <TextView
+        android:layout_weight="1"
+        android:onClick="approve_delboy_admin"
+        android:id="@+id/approve_delboy_admin"
+        android:text="New Registrations"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/amethysta"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <View
+        android:layout_weight="0.01"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:onClick="delboy_admin"
+        android:id="@+id/delboy_admin"
+        android:text="Shipper Details"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/amethysta"
+        android:textColor="@color/admin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <View
+        android:layout_weight="0.01"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

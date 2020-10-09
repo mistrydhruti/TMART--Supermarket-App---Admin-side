@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="13"
+    android:layout_height="match_parent"
+    tools:context=".AdminMaintainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:background="@color/admin"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:id="@+id/back_button"
+            android:src="@drawable/tmart"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:id="@+id/title"
+            android:text="UPDATE PRODUCT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/amethysta"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:onClick="Go_to_home"
+            android:src="@drawable/home_icon"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:padding="16dp"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/select_product_image_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/select" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/product_name_maintain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:background="@drawable/new_edit2"
+            android:fontFamily="@font/arial"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:letterSpacing="0.05"
+            android:paddingLeft="9dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/admin"
+            android:textCursorDrawable="@drawable/new_cursor2"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="10">
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:paddingLeft="9dp"
+            android:hint="Product Quantity"
+            android:id="@+id/product_quantity_maintain"
+            android:paddingRight="4dp"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/arial"
+            android:textCursorDrawable="@drawable/new_cursor2"
+            android:background="@drawable/new_edit2"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@color/admin"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/product_description_maintain"
+            android:textCursorDrawable="@drawable/new_cursor2"
+            android:background="@drawable/new_edit2"
+            android:ems="10"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/admin"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:layout_height="0dp"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:letterSpacing="0.05"
+            android:padding="7dp"
+            android:textSize="16sp"
+            android:hint="Product Description" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:weightSum="10">
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:hint="MRP"
+            android:inputType="number"
+            android:letterSpacing="0.05"
+            android:paddingLeft="9dp"
+            android:fontFamily="@font/arial"
+            android:id="@+id/mrp_maintain"
+            android:paddingRight="4dp"
+            android:textCursorDrawable="@drawable/new_cursor2"
+            android:background="@drawable/new_edit2"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@color/admin"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:weightSum="10">
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:hint="Tmart Price"
+            android:inputType="number"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/arial"
+            android:paddingLeft="9dp"
+            android:id="@+id/product_price_maintain"
+            android:paddingRight="4dp"
+            android:textCursorDrawable="@drawable/new_cursor2"
+            android:background="@drawable/new_edit2"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@color/admin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:weightSum="10">
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:hint="Savings"
+            android:inputType="text"
+            android:letterSpacing="0.05"
+            android:paddingLeft="9dp"
+            android:id="@+id/savings_maintain"
+            android:paddingRight="4dp"
+            android:fontFamily="@font/arial"
+            android:textCursorDrawable="@drawable/new_cursor2"
+            android:background="@drawable/new_edit2"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@color/admin"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layoutAnimation="@anim/layout_animation_left_to_right"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/apply_changes"
+            android:layout_width="80dp"
+            android:fontFamily="@font/amiko"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_design2"
+            android:text="Apply Changes"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

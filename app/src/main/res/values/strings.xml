@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AdminTmart</string>
+    <string name="Rs">\u20B9</string>
+    <string name="tab_text_1">Menu Management</string>
+    <string name="tab_text_2">Order Management</string>
+    <string name="tab_text_3">Delivery Management</string>
+
+</resources>

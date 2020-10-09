@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="380dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="11.5"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/admin"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/arial"
+                android:text="Name :"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="7"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Email :"
+                android:textColor="@color/admin"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="7"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/arial"
+                android:text="Total :"
+                android:textStyle="bold"
+                android:textColor="@color/admin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:text="@string/Rs"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/order_totprice"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="6.6"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical|top"
+                android:padding="5dp"
+                android:text="Address :"
+                android:textStyle="bold"
+                android:textColor="@color/admin"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/order_address"
+                android:layout_width="0dp"
+                android:gravity="center_vertical|top"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="7"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/admin"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:text="Order Date :"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="7"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/admin"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:text="Order Time :"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="7"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_weight="4"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/admin"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/arial"
+                android:text="Payment Method:"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/payment_method"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="6"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_weight="4"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/admin"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/arial"
+                android:text="Delivery Time :"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/delivery_time"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_weight="6"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/viewprod"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/amiko"
+                    android:text="View Products"
+                    android:background="@drawable/border_button"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/assignorderdel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amiko"
+                    android:background="@drawable/border_button"
+                    android:text="Assign Order"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
